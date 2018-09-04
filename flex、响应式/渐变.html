@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*IE
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',
+        endColorstr='#ff0000',GradientType='1');
+*/
+        .box{
+            width: 200px;height: 200px;border: 1px solid #000;box-sizing: border-box;
+            background: -webkit-linear-gradient(left top ,red, blue);background: -moz-linear-gradient(red, blue);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='red',
+            endColorstr='blue',GradientType='0');/*0:从上到下 1：从左到右*/
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>

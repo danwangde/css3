@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            height: 30px;border:1px solid #f00000;
+        }
+        p[class]{
+            background-color: yellow;
+        }
+        p[miaov='benben']{
+            background-color: pink;
+        }
+        p[miaov~='fei']{
+            background-color: yellowgreen;/*属性值是词列表，以空格隔开。包含了一个fei*/
+        }
+        p[miaov^=l]{
+            background-color: blue;/*属性值以l开头*/
+        }
+        p[miaov$=n]{
+            background-color: coral;/*属性值以n结束*/
+        }
+        p[miaov*=a]{
+            background-color: blueviolet;/*指定了属性名，并且有属性值，而且属值中包含了a*/
+        }
+        p[miaov|='leo']{
+            background-color: chartreuse;/*指定了属性名，并且属性值是leo或者以“leo-”开头的值*/
+        }
+
+    </style>
+</head>
+<body>
+<p class="p1">12</p>
+<p miaov="benben fei">23</p>
+<p miaov="leo">34</p>
+<p miaov="momo">45</p>
+<p miaov="tian">56</p>
+<p miaov="leo-lian">56</p>
+<p miaov="da">56</p>
+</body>
+</html>
